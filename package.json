@@ -1,5 +1,5 @@
 {
-  "name": "mkdirp",
+  "name": "node-mkdirp",
   "version": "0.0.1",
   "description": "mkdir -p",
   "main": "index.js",

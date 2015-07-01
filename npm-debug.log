@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/boiawang/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/Users/boiawang/.npm/mkdir-p/0.0.1/package.tgz', '.' ]
+12 verbose tarball /Users/boiawang/.npm/mkdir-p/0.0.1/package.tgz
+13 verbose folder .
+14 info prepublish mkdir-p@0.0.1
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /Users/boiawang/.npm/1f1177db-tar.lock
+17 silly lockFile 7f6c10de-ng-npm-mkdir-p-0-0-1-package-tgz tar:///Users/boiawang/.npm/mkdir-p/0.0.1/package.tgz
+18 verbose lock tar:///Users/boiawang/.npm/mkdir-p/0.0.1/package.tgz /Users/boiawang/.npm/7f6c10de-ng-npm-mkdir-p-0-0-1-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 7f6c10de-ng-npm-mkdir-p-0-0-1-package-tgz tar:///Users/boiawang/.npm/mkdir-p/0.0.1/package.tgz
+22 silly lockFile 7f6c10de-ng-npm-mkdir-p-0-0-1-package-tgz tar:///Users/boiawang/.npm/mkdir-p/0.0.1/package.tgz
+23 silly lockFile 7beac5b5-iawang-npm-mkdir-p-0-0-1-package /Users/boiawang/.npm/mkdir-p/0.0.1/package
+24 verbose lock /Users/boiawang/.npm/mkdir-p/0.0.1/package /Users/boiawang/.npm/7beac5b5-iawang-npm-mkdir-p-0-0-1-package.lock
+25 silly lockFile 7beac5b5-iawang-npm-mkdir-p-0-0-1-package /Users/boiawang/.npm/mkdir-p/0.0.1/package
+26 silly lockFile 7beac5b5-iawang-npm-mkdir-p-0-0-1-package /Users/boiawang/.npm/mkdir-p/0.0.1/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'mkdir-p',
+29 silly publish   version: '0.0.1',
+29 silly publish   description: 'mkdir -p',
+29 silly publish   main: 'index.js',
+29 silly publish   bin: { mkdirp: './bin/mkdirp' },
+29 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+29 silly publish   repository: { type: 'git', url: 'git@github.com:boiawang/mkdirp.git' },
+29 silly publish   keywords: [ 'mkdir', '-p' ],
+29 silly publish   author:
+29 silly publish    { name: 'boia',
+29 silly publish      email: 'zhengwang2314@gmail.com',
+29 silly publish      url: 'http://www.boiajs.com/' },
+29 silly publish   license: 'MIT',
+29 silly publish   bugs: { url: 'https://github.com/boiawang/mkdirp/issues' },
+29 silly publish   homepage: 'https://github.com/boiawang/mkdirp',
+29 silly publish   dependencies: { yargs: '^3.14.0' },
+29 silly publish   readme: '# mkdirp\n\n可以像`mkdir -p`一样建目录\n\n## 安装\n\n```\nnpm install -g mkdir-p\n```\n\n## 使用\n\n```\nmkdirp a/b/c\nmkdirp a/b/c -m r+\n```\n\n',
+29 silly publish   readmeFilename: 'Readme.md',
+29 silly publish   gitHead: 'ca1876fbbd1f062d4a8cf3136f4bb65860e18c6d',
+29 silly publish   _id: 'mkdir-p@0.0.1',
+29 silly publish   _shasum: '6b9b98bf7797bbe9ac9fcbc2a3aeefd586c545ae',
+29 silly publish   _from: '.' }
+30 verbose request where is /mkdir-p
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 2443c9e36b986243
+33 verbose url raw /mkdir-p
+34 verbose url resolving [ 'https://registry.npmjs.org/', './mkdir-p' ]
+35 verbose url resolved https://registry.npmjs.org/mkdir-p
+36 verbose request where is https://registry.npmjs.org/mkdir-p
+37 info trying registry request attempt 1 at 10:50:24
+38 http PUT https://registry.npmjs.org/mkdir-p
+39 http 403 https://registry.npmjs.org/mkdir-p
+40 verbose headers { 'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '99',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   date: 'Wed, 01 Jul 2015 02:50:24 GMT',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   connection: 'keep-alive',
+40 verbose headers   'x-served-by': 'cache-nrt6132-NRT',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1435719023.231668,VS0,VE1619' }
+41 error publish Failed PUT 403
+42 error Error: You do not have permission to publish 'mkdir-p'. Are you logged in as the correct user? : mkdir-p
+42 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+42 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+42 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:944:16
+42 error     at process._tickCallback (node.js:442:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Darwin 14.0.0
+45 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error cwd /Users/boiawang/work/shell/mkdirp
+47 error node -v v0.10.35
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
